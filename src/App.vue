@@ -21,7 +21,7 @@ const { movie, showFullVideo } = storeToRefs(useMovie)
       id="SideNav"
       class="flex z-40 items-center w-[120px] h-screen bg-black relative"
     >
-      IMAGE
+      <img class="absolute top-0 w-[35px] mt-10 ml-10" src="/images/netflix-logo.png" alt="" />
       <div>
         <div class="py-2 mx-10 my-6">
           <Magnify fillColor="#FFFFFF" :size="40" class="cursor-pointer" />
