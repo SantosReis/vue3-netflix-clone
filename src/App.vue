@@ -10,6 +10,8 @@ import MovieOutline from 'vue-material-design-icons/MovieOutline.vue'
 import Plus from 'vue-material-design-icons/Plus.vue'
 import ChevronLeft from 'vue-material-design-icons/ChevronLeft.vue'
 
+import MovieDetails from '@/components/MovieDetails.vue'
+
 import { useMovieStore } from './stores/movie'
 import { storeToRefs } from 'pinia'
 const useMovie = useMovieStore()
@@ -53,6 +55,7 @@ onMounted(() => {
         <div
           class="absolute z-30 h-[600px] left-[120px] w-[77%] right-0 top-0 bg-gradient-to-r from-black via-black"
         />
+        <MovieDetails v-if="movie" :movie="movie" />
 
         <video
           v-if="movie"
